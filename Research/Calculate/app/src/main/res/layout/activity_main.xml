@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/math">
+
+        <EditText
+            android:id="@+id/sideTv"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/resTv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="34dp"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:background="@android:color/background_light"
+            android:hint="Страна" />
+        <EditText
+            android:id="@+id/heightTv"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="110dp"
+            android:inputType="numberDecimal"
+            android:textAlignment="center"
+            android:background="@android:color/background_light"
+            android:hint="Височина" />
+
+        <TextView
+            android:id="@+id/resTv"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/heightTv"
+            android:layout_below="@+id/heightTv"
+            android:layout_marginTop="22dp"
+            android:background="@android:color/background_light"
+            android:hint="Резултат"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/calcBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/resTv"
+            android:layout_below="@+id/resTv"
+            android:layout_marginTop="36dp"
+            android:text="Calculate" />
+
+        <Button
+            android:id="@+id/resBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/hisBtn"
+            android:layout_alignEnd="@+id/resTv"
+            android:text="Reset" />
+
+        <Button
+            android:id="@+id/hisBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/calcBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="35dp"
+            android:text="history" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

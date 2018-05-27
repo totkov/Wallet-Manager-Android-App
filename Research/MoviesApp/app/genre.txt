@@ -1,0 +1,11 @@
+Action
+Animation
+Biography
+Drama
+Documental
+Comedy
+Romantic
+Thriller
+Sci-fi
+Western
+
